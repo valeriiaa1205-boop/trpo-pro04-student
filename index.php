@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-require_once __DIR__ . '/../src/functions.php';
+require_once __DIR__ . '/../functions.php';
 
 $version = '1.0.0';
 $today = date('d.m.Y');
-$employees = loadEmployees(__DIR__ . '/../data/employees.csv');
-$formCases = loadFormCases(__DIR__ . '/../data/form_cases.json');
+$employees = loadEmployees(__DIR__ . '/../employees.csv');
+$formCases = loadFormCases(__DIR__ . '/../form_cases.json');
 
 $values = [
     'name' => '',
